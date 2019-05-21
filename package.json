@@ -1,0 +1,15 @@
+{
+  "name": "email-sender",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "build": "sucrase ./src -d ./dist --transforms typescript,imports"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0",
+    "sucrase": "^3.10.1",
+    "typescript": "^3.4.5"
+  }
+}

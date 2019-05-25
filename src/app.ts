@@ -3,7 +3,7 @@ import cors from 'cors'
 import routes from './routes'
 
 class App {
-  public express: express
+  public express: express.Application
 
   public constructor () {
     this.express = express()

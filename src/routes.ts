@@ -21,11 +21,11 @@ routes.post('/send', function (req, res): void {
   }
 
   transporter.sendMail(mailOptions)
-    .then(email => {
+    .then((email): void => {
       console.log(email)
       res.status(200).send(email)
     })
-    .catch(err => {
+    .catch((err): void => {
       console.log(err)
       res.status(500).send(err)
     })

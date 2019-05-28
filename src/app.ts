@@ -7,12 +7,11 @@ class App {
 
   public constructor () {
     this.express = express()
-
     this.middlawares()
     this.routes()
   }
 
-  private middlawares ():void {
+  private middlawares (): void {
     this.express.use(express.json())
     this.express.use(cors())
   }

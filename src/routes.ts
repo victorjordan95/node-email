@@ -3,7 +3,7 @@ import nodemailer from 'nodemailer'
 
 const routes = Router()
 
-routes.post('/api/send', function (req, res): void {
+routes.post('/api/send', (req, res): void => {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {

@@ -7,8 +7,8 @@ const routes = Router()
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: process.env.email || 'sistema.sgo.ccb@gmail.com',
-    pass: process.env.password || 'retratofalado'
+    user: process.env.email,
+    pass: process.env.password
   }
 })
 
